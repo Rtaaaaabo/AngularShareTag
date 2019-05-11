@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { TopComponent } from './component/top/top.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: TopComponent,
+    data: { title : '共有'}
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
